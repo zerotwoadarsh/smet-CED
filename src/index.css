@@ -70,3 +70,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+/* li {
+  list-style: none;
+} */
