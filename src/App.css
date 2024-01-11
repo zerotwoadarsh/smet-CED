@@ -6,11 +6,11 @@
 }
 
 .site-footer {
-  background: #00563D;
-  border-top: 0px solid #DDDDDD;
-  border-bottom: 0px solid #DDDDDD;
-  border-left: 0px solid #DDDDDD;
-  border-right: 0px solid #DDDDDD;
+  background: #00563d;
+  border-top: 0px solid #dddddd;
+  border-bottom: 0px solid #dddddd;
+  border-left: 0px solid #dddddd;
+  border-right: 0px solid #dddddd;
   overflow: hidden;
   clear: both;
 }
@@ -50,3 +50,9 @@
 .read-the-docs {
   color: #888;
 } */
+
+.list_style {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}

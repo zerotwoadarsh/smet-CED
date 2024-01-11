@@ -3,6 +3,14 @@ import { Navbar } from "./component/Navbar";
 import { Route, Routes } from "react-router-dom";
 import About from "../src/component/about/About";
 import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
+import About_Kurukshetra from "./component/about/About_Kurukshetra";
+import About_SMET_2024 from "./component/about/about_SMET_2024";
+import External_advisory_committe from "./component/Committe/External_advisory_committe";
+import Committe from "./component/Committe/Committe";
+import Organising_Committe from "./component/Committe/Organising_Committe";
+import Internal_advisory_committe from "./component/Committe/Internal_advisory_committe";
+import Technical_committe from "./component/Committe/Technical_committe";
+
 
 function App() {
   return (
@@ -29,7 +37,13 @@ function App() {
       </p> */}
 
       {/* <Navbar /> */}
-      <AboutNITKurukshetra />
+      {/* <AboutNITKurukshetra /> */}
+      {/* <About_Kurukshetra /> */}
+      {/* <About_SMET_2024 /> */}
+      {/* <External_advisory_committe /> */}
+      {/* < Organising_Committe /> */}
+      {/* <Internal_advisory_committe /> */}
+      <Technical_committe />
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/' element={<Home />} />
