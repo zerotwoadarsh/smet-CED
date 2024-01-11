@@ -1,11 +1,10 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Navbar } from './component/Navbar'
-import { Route, Routes } from 'react-router-dom'
+import "./App.css";
+import { Navbar } from "./component/Navbar";
+import { Route, Routes } from "react-router-dom";
+import About from "../src/component/about/About";
+import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
 
 function App() {
-
   return (
     <div>
       {/* <div>
@@ -28,8 +27,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      
-      <Navbar /> 
+
+      {/* <Navbar /> */}
+      <AboutNITKurukshetra />
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/' element={<Home />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path='/' element={<Home />} />
       </Routes> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
