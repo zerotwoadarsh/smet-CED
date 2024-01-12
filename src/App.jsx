@@ -1,45 +1,39 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Navbar } from './component/Navbar'
-import { Route, Routes } from 'react-router-dom'
+import External_advisory_committe from "./component/Committe/External_advisory_committe";
+import { Navbar } from "./component/Navbar";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import Internal_advisory_committe from "./component/Committe/Internal_advisory_committe";
+import Organising_Committe from "./component/Committe/Organising_Committe";
+import Technical_committe from "./component/Committe/Technical_committe";
+import About_Kurukshetra from "./component/about/About_Kurukshetra";
+import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
+import About_SMET_2024 from "./component/about/About_SMET_2024";
 
 function App() {
-
   return (
-    <div>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-      
-      <Navbar /> 
-      {/* <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={<Home />} />
-      </Routes> */}
-    </div>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/committee/external-advisory"
+          element={<External_advisory_committe />}
+        />
+        <Route
+          path="/committee/internal-advisory"
+          element={<Internal_advisory_committe />}
+        />
+        <Route path="/committee/organizing" element={<Organising_Committe />} />
+        <Route path="/committee/technical" element={<Technical_committe />} />
+        <Route path="/about/kurukshetra" element={<About_Kurukshetra />} />
+        <Route path="/" element={<AboutNITKurukshetra />} />
+        <Route
+          path="/about/nit-kurukshetra"
+          element={<AboutNITKurukshetra />}
+        />
+        <Route path="/about/sdcee-23" element={<About_SMET_2024 />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
