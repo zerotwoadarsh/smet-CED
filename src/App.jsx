@@ -1,16 +1,13 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Navbar } from './component/Navbar'
-// import { Home } from './component/Home'
-import Home from './component/Home'
 import { Route, Routes } from 'react-router-dom'
-
 import './app.css'
+import { Navbar } from './component/Navbar'
+import Home from './component/Home'
+import { MainFooter } from './component/MainFooter'
 
 function App() {
 
   return (
-    <div>
+    <div className='bg-blue-200'>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -34,7 +31,7 @@ function App() {
       
       {/* <Navbar />  */}
       <Home />
-      
+      <MainFooter />
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/' element={<Home />} />

@@ -16,7 +16,7 @@ const ListItem = (props) => {
         )
     });
     return (
-        <div>{listItem}</div>
+        <div className='flex flex-row flex-wrap justify-center items-center'>{listItem}</div>
     )
 
 }
