@@ -1,42 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react';
-
-const DropdownMenu = ({ items }) => {
-    return (
-        <ul className="submenu hidden absolute top-full left-0 bg-white p-2 shadow-md">
-            {items.map((item, index) => (
-                <li key={index} className="submenu-item">
-                    <NavLink to={item.to} className="text-black">
-                        {item.label}
-                    </NavLink>
-                </li>
-            ))}
-        </ul>
-    );
-};
 
 export const Navbar = () => {
 
-    const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
-
-    const handleMouseOver = () => {
-        setAboutDropdownOpen(true);
-    };
-
-    const handleMouseLeave = () => {
-        setAboutDropdownOpen(false);
-    };
-
-
-    const aboutDropdownItems = [
-        { to: '/about/nit-kurukshetra', label: 'About NIT Kurukshetra' },
-        { to: '/about/kurukshetra', label: 'About Kurukshetra' },
-        { to: '/about/sdcee-23', label: 'About SDCEE-23' },
-    ];
+    const [temp , setTemp] = useState(false);
 
     return (
         <nav>
-            <div className=" flex justify-center align-baseline h-10 bg-lime-600  fixed w-full top-0 list-none">
+            <div className=" flex justify-center h-10 fixed bg-lime-600 w-full top-0 list-none">
 
                 <li className="mr-6 relative flex items-center hover:bg-lime-800 p-2">
                     <NavLink to="/" className="text-white  hover:text-white">Home</NavLink>
@@ -46,19 +16,15 @@ export const Navbar = () => {
                     <NavLink to="/conference-track" className="text-white hover:text-white">Conference Track</NavLink>
                 </li>
 
-                <li className="mr-6 relative flex items-center hover:bg-lime-800 p-2">
-                    <div
-                        className="relative"
-                        onMouseOver={handleMouseOver}
-                        onMouseLeave={handleMouseLeave}
-                    >
-                        <NavLink to="/about" className="text-white hover:text-white">
-                            About
-                        </NavLink>
-                        {isAboutDropdownOpen && <DropdownMenu items={aboutDropdownItems} />}
-                    </div>
-                </li>
+                <li className="mr-6 relative flex items-center hover:bg-lime-800 p-2" onMouseOver={setTemp(temp)} onMouseOut={setTemp(false)}>
+                    <NavLink to="/about" className="text-white hover:text-white">About</NavLink>
 
+                    <ul className="submenu absolute top-full left-0 bg-white p-2 shadow-md hover:bg-lime-800 ${temp ? block : hidden}">
+                        <li className="submenu-item"><NavLink to="/about/nit-kurukshetra" className="text-black">About NIT Kurukshetra</NavLink></li>
+                        <li className="submenu-item"><NavLink to="/about/kurukshetra" className="text-white">About Kurukshetra</NavLink></li>
+                        <li className="submenu-item"><NavLink to="/about/sdcee-23" className="text-white">About SDCEE-23</NavLink></li>
+                    </ul>   
+                </li>
                 <li className="mr-6 relative flex items-center hover:bg-lime-800 p-2">
                     <NavLink to="/registration-information" className="text-white hover:text-white">Registration Information</NavLink>
                 </li>

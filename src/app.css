@@ -1,0 +1,14 @@
+.list {
+    display: hidden;
+}
+
+.list:hover {
+    display: flex;
+}
+
+.backGround {
+    background-image: url('https://th.bing.com/th/id/OIP.dClXLbXuCMrisHZF34jtQgHaE7?w=242&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

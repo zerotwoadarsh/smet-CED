@@ -1,7 +1,11 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Navbar } from './component/Navbar'
+// import { Home } from './component/Home'
+import Home from './component/Home'
 import { Route, Routes } from 'react-router-dom'
+
+import './app.css'
 
 function App() {
 
@@ -28,7 +32,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       
-      <Navbar /> 
+      {/* <Navbar />  */}
+      <Home />
+      
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/' element={<Home />} />
