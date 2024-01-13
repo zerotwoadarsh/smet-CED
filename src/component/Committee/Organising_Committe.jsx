@@ -1,5 +1,5 @@
 import React from "react";
-import Committe from "./Committe";
+import Committe from "./Committee";
 
 const Organising_Committe = () => {
   var data = {

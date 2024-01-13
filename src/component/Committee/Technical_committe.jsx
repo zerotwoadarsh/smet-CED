@@ -1,5 +1,5 @@
 import React from 'react'
-import Committe from './Committe';
+import Committe from './Committee';
 
 const Technical_committe = () => {
   var data = {

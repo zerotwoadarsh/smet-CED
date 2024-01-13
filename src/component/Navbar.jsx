@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 
 const DropdownMenu = ({ items }) => {
   return (
-    <ul className="submenu absolute top-full left-0 bg-white p-2 shadow-md">
+    <ul className="submenu absolute top-full left-0  text-white p-2 shadow-md w-max bg-lime-600">
       {items.map((item, index) => (
-        <li key={index} className="submenu-item">
           <NavLink to={item.to} className="text-black">
+        <li key={index} className="submenu-item text-white hover:text-blue-900">
             {item.label}
-          </NavLink>
         </li>
+          </NavLink>
       ))}
     </ul>
   );
@@ -76,41 +76,41 @@ export const Navbar = () => {
   return (
     <nav>
       <div
-        className={`flex justify-between items-center h-10 bg-lime-600 fixed w-[100vw] top-0 list-none max-lg:justify-end`}
+        className={`flex justify-between items-center h-10 bg-lime-600 fixed w-[100vw] top-0 list-none max-lg:justify-end z-100`}
       >
         <div className="flex items-center justify-between m-auto max-lg:hidden">
           <li className="mr-6 relative">
-            <NavLink to="/" className="text-white">
+            <NavLink to="/" className="text-white hover:text-blue-900">
               Home
             </NavLink>
           </li>
           <li className="mr-6 relative">
-            <NavLink to="/conference-track" className="text-white">
+            <NavLink to="/conference-track" className="text-white hover:text-blue-900">
               Conference Track
             </NavLink>
           </li>
+              <NavLink to="#" className="text-white hover:text-blue-900">
           <li className="mr-6 relative">
             <div
               className="relative"
               onMouseOver={handleMouseOver}
               onMouseLeave={handleMouseLeave}
             >
-              <NavLink to="#" className="text-white">
                 About
-              </NavLink>
               {isAboutDropdownOpen && (
                 <DropdownMenu items={aboutDropdownItems} />
               )}
             </div>
           </li>
+              </NavLink>
           <li className="mr-6 relative">
-            <NavLink to="/registration-information" className="text-white">
+            <NavLink to="/registration-information" className="text-white hover:text-blue-900">
               Registration Information
             </NavLink>
           </li>
 
           <li className="mr-6 relative">
-            <NavLink to="/submissions" className="text-white">
+            <NavLink to="/submissions" className="text-white hover:text-blue-900">
               Submissions
             </NavLink>
           </li>
@@ -119,7 +119,7 @@ export const Navbar = () => {
             onMouseOver={handleMouseOverCommety}
             onMouseLeave={handleMouseLeaveCommety}
           >
-            <NavLink to="#" className="text-white">
+            <NavLink to="#" className="text-white hover:text-blue-900">
               Committee
             </NavLink>
             {isCommetyDropdownOpen && (
@@ -128,13 +128,13 @@ export const Navbar = () => {
           </li>
 
           <li className="mr-6 relative">
-            <NavLink to="/sponsorships" className="text-white">
+            <NavLink to="/sponsorships" className="text-white hover:text-blue-900">
               Sponsorships
             </NavLink>
           </li>
 
           <li className="relative">
-            <NavLink to="/contact" className="text-white">
+            <NavLink to="/contact" className="text-white hover:text-blue-900">
               Contact
             </NavLink>
           </li>

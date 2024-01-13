@@ -1,20 +1,22 @@
-import External_advisory_committe from "./component/Committe/External_advisory_committe";
+import External_advisory_committe from "./component/Committee/External_advisory_committe";
 import { Navbar } from "./component/Navbar";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Internal_advisory_committe from "./component/Committe/Internal_advisory_committe";
-import Organising_Committe from "./component/Committe/Organising_Committe";
-import Technical_committe from "./component/Committe/Technical_committe";
+import Internal_advisory_committe from "./component/Committee/Internal_advisory_committe";
+import Organising_Committe from "./component/Committee/Organising_Committe";
+import Technical_committe from "./component/Committee/Technical_committe";
 import About_Kurukshetra from "./component/about/About_Kurukshetra";
 import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
 import About_SMET_2024 from "./component/about/About_SMET_2024";
 import Home from "./component/Home";
-import Nav  from "./Nav";
+import ContactUs from "./component/contact/ContactUs";
+import Sponsorships from "./component/sponsers/Sponsorships";
+import ConferenceTrack from "./component/ConferenceTrack";
 
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route
           path="/committee/external-advisory"
@@ -33,9 +35,13 @@ function App() {
           element={<AboutNITKurukshetra />}
         />
         <Route path="/about/sdcee-23" element={<About_SMET_2024 />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/sponsorships" element={<Sponsorships />} />
+        <Route path="/conference-track" element={<ConferenceTrack />} />
+
       </Routes>
-      <footer className="site-footer self-end">
-        <p>SMET © 2024 All Rights Reserved</p>
+      <footer className="site-footer self-end flex justify-center">
+        <p className="h-10">SMET © 2024 All Rights Reserved</p>
       </footer>
     </Router>
   );

@@ -6,10 +6,11 @@ import hd_chalak from "../assets/images/hd_chalak.jpg";
 import mahesh from "../assets/images/mahesh.jpg";
 import praveen from "../assets/images/praveen.jpg";
 import ramana from "../assets/images/ramana.jpg";
+import Footer from "./Footer";
 
 const Home = () => {
   const styles = {
-    backgroundImage: `url(${"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11MDeO.img"})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11MDeO.img"})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -18,80 +19,80 @@ const Home = () => {
   const prof = [
     {
       name: "B.V. Ramana Reddy",
-      img: "../assets/images/ramana.jpg",
+      img: `${ramana}`,
       designation: "PATRON",
       post: "Director, NIT Kurukshetra",
     },
     {
       name: "Arun Goel",
-      img: { arun },
+      img: `${arun}`,
       designation: "ORGANISING CHAIR",
       post: "Professor & Head, Civil Engg. Deptt. ",
     },
     {
       name: "Dr. Mahesh Pal",
-      img: { mahesh },
+      img: `${mahesh}`,
       designation: "Organizing secretary",
       post: "Professor, Civil Engg. Deptt. ",
     },
     {
       name: "Dr. Ashwani Jain ",
-      img: { ashwini_jain },
+      img: `${ashwini_jain}`,
       designation: "Organizing secretary",
       post: "Professor, Civil Engg. Deptt. ",
     },
     {
       name: "Dr. Praveen Aggarwal ",
-      img: { praveen },
+      img: `${praveen}`,
       designation: "Organizing secretary",
       post: "Professor, Civil Engg. Deptt.",
     },
     {
       name: "Dr. H D Chalak ",
-      img: { hd_chalak },
+      img: `${hd_chalak}`,
       designation: "Organizing secretary",
       post: "Assistant Professor, Civil Engg. Deptt.",
     },
   ];
 
   return (
-    <div className="mb-5 bg-blue-200">
+    <div className="mb-5 bg-gradient-to-br from-gray-700 to-rose-100 h-full">
       <div
         style={styles}
-        className=" flex flex-col h-screen justify-center items-center"
+        className="flex flex-col min-h-screen justify-center items-center"
       >
-        <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
-          <header>
-            <p className=" text-6xl font-extrabold">SMET-2024</p>
-          </header>
-          <p className="font-bold text-3xl flex flex-col text-center ">
-            Sustainable Materials, Environment and Technologies under climate
-            change scenario
-          </p>
-          <main className=" flex justify-center items-center">
-            <p className="flex justify-center items-center text-justify">
-              An International Conference on Sustainable Materials, Environment
-              and Technologies under climate change scenario is being organized
-              by the Department of Civil Engineering, National Institute of
-              Technology, Kurukshetra. The need of the era is to use sustainable
-              technologies. Sustainable development is the idea that human
-              societies must live, and meet their needs, without compromising
-              the ability of future generations to achieve their requirements.
-              The conference aims to stimulate the exchange of information on
-              current research, development and sharing of relevant experience
-              in the specific areas of Civil Engineering. The conference shall
-              provide a useful forum to academicians, technologists,
-              entrepreneurs and the research scholars in respective domain to s{" "}
+          <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
+            <header>
+              <p className=" text-6xl font-extrabold">SMET-2024</p>
+            </header>
+            <p className="font-bold text-3xl flex flex-col text-center text-white opacity-100 z-2">
+              Sustainable Materials, Environment and Technologies under climate
+              change scenario
             </p>
-          </main>
-          <footer>
-            <p>&copy; 2024 Your Name</p>
-          </footer>
+            <main className=" flex justify-center items-center">
+              <p className="flex justify-center items-center text-justify">
+                An International Conference on Sustainable Materials, Environment
+                and Technologies under climate change scenario is being organized
+                by the Department of Civil Engineering, National Institute of
+                Technology, Kurukshetra. The need of the era is to use sustainable
+                technologies. Sustainable development is the idea that human
+                societies must live, and meet their needs, without compromising
+                the ability of future generations to achieve their requirements.
+                The conference aims to stimulate the exchange of information on
+                current research, development and sharing of relevant experience
+                in the specific areas of Civil Engineering. The conference shall
+                provide a useful forum to academicians, technologists,
+                entrepreneurs and the research scholars in respective domain to s{" "}
+              </p>
+            </main>
+            <footer>
+              <p>&copy; 2024 Your Name</p>
+            </footer>
         </div>
       </div>
 
       <div className="text-black">
-        <div className="bg-blue-200 flex justify-center flex-col text-black">
+        <div className=" flex justify-center flex-col text-black">
           <div className="flex justify-center mt-32 text-justify">
             <p className="block font-semibold text-3xl mb-5">
               Organising Committee
@@ -102,7 +103,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex bg-blue-200 flew-row flex-wrap justify-evenly">
+        <div className="flex flew-row flex-wrap justify-evenly items-start">
           <div className="flex flex-col justify-center items-center w-1/3 h-auto">
             <p className=" text-4xl m-5 font-bold">Scope</p>
             <p className=" text-blue-800 font-medium text-justify">
@@ -137,6 +138,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* <Footer/> */}
     </div>
   );
 };

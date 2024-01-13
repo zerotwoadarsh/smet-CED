@@ -1,9 +1,9 @@
 import React from "react";
-import Committe from "./Committe";
+import Committe from "./Committee";
 
 const External_advisory_committe = () => {
   var data = {
-    name: "External Advisory Committe",
+    name: "External Advisory Committee",
     listItems: [
       "Dr. Manoranjan Parida, CRRI, Delhi",
       "Dr. Ashish Juneja, IIT Bombay",
