@@ -32,6 +32,9 @@ function App() {
         />
         <Route path="/about/sdcee-23" element={<About_SMET_2024 />} />
       </Routes>
+      <footer className="site-footer self-end">
+        <p>SMET © 2024 All Rights Reserved</p>
+      </footer>
     </Router>
   );
 }
