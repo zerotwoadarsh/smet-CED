@@ -8,11 +8,13 @@ import Technical_committe from "./component/Committe/Technical_committe";
 import About_Kurukshetra from "./component/about/About_Kurukshetra";
 import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
 import About_SMET_2024 from "./component/about/About_SMET_2024";
+import Nav  from "./Nav";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Nav/>
       <Routes>
         <Route
           path="/committee/external-advisory"
@@ -25,7 +27,7 @@ function App() {
         <Route path="/committee/organizing" element={<Organising_Committe />} />
         <Route path="/committee/technical" element={<Technical_committe />} />
         <Route path="/about/kurukshetra" element={<About_Kurukshetra />} />
-        <Route path="/" element={<AboutNITKurukshetra />} />
+        {/* <Route path="/" element={<AboutNITKurukshetra />} /> */}
         <Route
           path="/about/nit-kurukshetra"
           element={<AboutNITKurukshetra />}
