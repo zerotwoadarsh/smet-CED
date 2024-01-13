@@ -9,11 +9,12 @@ import About_Kurukshetra from "./component/about/About_Kurukshetra";
 import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
 import About_SMET_2024 from "./component/about/About_SMET_2024";
 import Home from "./component/Home";
+import Nav  from "./Nav";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route
           path="/committee/external-advisory"
