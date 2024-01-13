@@ -11,10 +11,10 @@ const Committe = ({ data }) => {
             <img src={banner} alt="" className="w-full h-auto" />
           </div>
           <div>
-            <h1 className="m-10">{data.name}</h1>
+            <h1 className="text-2xl font-bold">{data.name}</h1>
           </div>
         </div>
-        <div className="px-4 py-12 mt-auto flex items-end justify-center text-white">
+        <div className="px-4 py-8 mt-auto flex items-end justify-center text-white">
           <ul className="text-lg list-disc list_style">
             {data.listItems.map((item, index) => (
               <li key={index}>{item}</li>
@@ -22,9 +22,7 @@ const Committe = ({ data }) => {
           </ul>
         </div>
       </div>
-      <footer className="site-footer">
-        <p>SMET © 2024 All Rights Reserved</p>
-      </footer>
+
     </>
   );
 };
