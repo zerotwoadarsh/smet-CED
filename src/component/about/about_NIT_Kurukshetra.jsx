@@ -8,7 +8,7 @@ const AboutNITKurukshetra = () => {
   };
   return (
     <div>
-      <div>
+      <div className="">
         <About data={data} />
       </div>
     </div>

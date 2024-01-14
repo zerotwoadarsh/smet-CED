@@ -6,11 +6,11 @@ import hd_chalak from "../assets/images/hd_chalak.jpg";
 import mahesh from "../assets/images/mahesh.jpg";
 import praveen from "../assets/images/praveen.jpg";
 import ramana from "../assets/images/ramana.jpg";
-import Footer from "./Footer";
+import homeBanner from "../assets/images/homeBanner.jpg"
 
 const Home = () => {
   const styles = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11MDeO.img"})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${homeBanner})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -56,7 +56,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="mb-5 bg-gradient-to-br from-gray-700 to-rose-100 h-full">
+    <div className=" bg-white h-full pb-5">
       <div
         style={styles}
         className="flex flex-col min-h-screen justify-center items-center"
@@ -103,8 +103,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flew-row flex-wrap justify-evenly items-start">
-          <div className="flex flex-col justify-center items-center w-1/3 h-auto">
+        <div className=" flex flex-col md:flex-row m-20 justify-evenly items-start">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
             <p className=" text-4xl m-5 font-bold">Scope</p>
             <p className=" text-blue-800 font-medium text-justify">
               SMET-2024, an International Conference on Sustainable Materials,
@@ -117,10 +117,10 @@ const Home = () => {
               published or accepted for publication or communicated elsewhere,
               are solicited on the topics underlined and within the scope of
               conference theme and are expected to be communicated for possible
-              publication.{" "}
+              publication.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center w-1/3 h-auto">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
             <p className="text-4xl m-5 font-bold">Theme</p>
             <p className=" font-medium">
               The themes for SMET-2024 include but not limited to the following
@@ -138,7 +138,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
     </div>
   );
 };

@@ -2,12 +2,6 @@ import React from 'react'
 import Committe from "./Committee/Committee";
 import banner from "../assets/images/banner.jpg";
 function ConferenceTrack() {
-    const styles = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11MDeO.img"})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-    };
 
     const data = [
         {
@@ -123,22 +117,19 @@ function ConferenceTrack() {
             name: "Remote Sensing and GIS Applications ",
             values: [
                 {
-                    id_value: "Innovative Structural Design and Analysis",
+                    id_value: "Geospatial Data Collection and Integration",
                 },
                 {
-                    id_value: "Advancements in Material Science and Technology ",
+                    id_value: "Machine Learning in Geospatial Analysis",
                 },
                 {
-                    id_value: "Seismic Design and Retrofitting",
+                    id_value: "Geospatial Data Visualization ",
                 },
                 {
-                    id_value: "Structural Health Monitoring and Condition Assessment",
+                    id_value: "GIS-Based Environmental Monitoring and Management",
                 },
                 {
-                    id_value: "Sustainable and Green Buildings",
-                },
-                {
-                    id_value: "Bridge Engineering and Infrastructure Resilience",
+                    id_value: "Applications of AI/ML in mitigating climate change issues related to energy efficient buildings, optimizing transportation systems leading to reduction in greenhouse gases, developing sustainable cities, natural resource management, infrastructure design and safety management ",
                 },
             ]
         },
@@ -147,22 +138,25 @@ function ConferenceTrack() {
             name: "Water Resources Engineering",
             values: [
                 {
-                    id_value: "Innovative Structural Design and Analysis",
+                    id_value: "Water Quality Assessment and Remediation",
                 },
                 {
-                    id_value: "Advancements in Material Science and Technology ",
+                    id_value: "Urban Water Infrastructure and Stormwater Management",
                 },
                 {
-                    id_value: "Seismic Design and Retrofitting",
+                    id_value: "Ecohydrology and Watershed Management",
                 },
                 {
-                    id_value: "Structural Health Monitoring and Condition Assessment",
+                    id_value: "Hydraulic Engineering and Infrastructure Design",
                 },
                 {
-                    id_value: "Sustainable and Green Buildings",
+                    id_value: "Integrated Water Resources Planning and Management",
                 },
                 {
-                    id_value: "Bridge Engineering and Infrastructure Resilience",
+                    id_value: "Climate Change Impacts on Water Resources",
+                },
+                {
+                    id_value: "Sustainable Water Management Strategies",
                 },
             ]
         },
@@ -171,22 +165,7 @@ function ConferenceTrack() {
             name: "SAI and ML Applications in Civil Engineering",
             values: [
                 {
-                    id_value: "Innovative Structural Design and Analysis",
-                },
-                {
-                    id_value: "Advancements in Material Science and Technology ",
-                },
-                {
-                    id_value: "Seismic Design and Retrofitting",
-                },
-                {
-                    id_value: "Structural Health Monitoring and Condition Assessment",
-                },
-                {
-                    id_value: "Sustainable and Green Buildings",
-                },
-                {
-                    id_value: "Bridge Engineering and Infrastructure Resilience",
+                    id_value: "Applications of AI/ML in mitigating climate change issues related to energy efficient buildings, optimizing transportation systems leading to reduction in greenhouse gases, developing sustainable cities, natural resource management, infrastructure design and safety management ",
                 },
             ]
         },
@@ -194,21 +173,20 @@ function ConferenceTrack() {
 
     return (
         <>
-            <div className="min-h-screenl">
+            <div className="min-h-screenl bg-white text-black">
                 <div>
-                    {/* Image Div */}
                     <div className="flex items-center justify-center ">
                         <img src={banner} alt="" className="w-full h-auto" />
                     </div>
                     <div>
-                        <h1 className="text-4xl font-bold flex justify-center mt-5">{data.name}</h1>
+                        <h1 className="text-4xl font-bold flex justify-center mt-5">Conference Track</h1>
                     </div>
                 </div>
-                <div className=" px-auto py-8 mx-auto grid items-end justify-center text-white grid-flow-row grid-cols-1 lg:grid-cols-2">
+                <div className=" px-auto py-8 mx-auto grid items-start justify-start grid-flow-row grid-cols-1 lg:grid-cols-2 ">
                     {data.map((items) => (
-                        <ul key={items.id} className="text-lg list-disc list_style py-5 mx-auto">
-                            <h1>{items.id} : {items.name}</h1>
-                            {items.values.map((listItem, index) => ( <li key={index}>{listItem.id_value}</li> ))}
+                        <ul key={items.id} className="text-lg list-disc list_style py-5 mx-auto w-3/5">
+                            <h1><span className=' font-bold ' >{items.id}</span>  : {items.name}</h1>
+                            {items.values.map((listItem, index) => ( <li key={index} className='mx-10'>{listItem.id_value}</li> ))}
                         </ul>
 
                     ))}

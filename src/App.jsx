@@ -12,9 +12,14 @@ import Home from "./component/Home";
 import ContactUs from "./component/contact/ContactUs";
 import Sponsorships from "./component/sponsers/Sponsorships";
 import ConferenceTrack from "./component/ConferenceTrack";
+import Footer from "./component/Footer";
+import RegistrationInformation from "./component/RegistrationInformation";
+import Submission from "./component/Submission";
 
 function App() {
   return (
+    <div className="App">
+
     <Router>
       <Navbar />
       <Routes>
@@ -38,12 +43,13 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/sponsorships" element={<Sponsorships />} />
         <Route path="/conference-track" element={<ConferenceTrack />} />
+        <Route path="/registration-information" element={<RegistrationInformation />} />
+        <Route path="/submissions" element={<Submission />} />
 
       </Routes>
-      <footer className="site-footer self-end flex justify-center">
-        <p className="h-10">SMET © 2024 All Rights Reserved</p>
-      </footer>
+      <Footer />
     </Router>
+    </div>
   );
 }
 

@@ -61,3 +61,20 @@
   display: flex;
   flex-direction: column;
 }
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer{
+  margin-top: auto;
+}
+
+.Navbar{
+  position:sticky;
+  z-index: 1;
+  top:0;
+  overflow:visible;
+}

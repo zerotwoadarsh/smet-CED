@@ -1,28 +1,25 @@
+
 import React from "react";
 import banner from "../../assets/images/banner.jpg";
 
-const About = ({ data }) => {
+const About = ({ styles, data }) => {
   return (
     <>
-      <div className="min-h-screenl">
+      <div className=" h-screen bg-white text-black">
         <div>
           {/* Image Div */}
-          <div className="flex items-center justify-center flex-col ">
+          <div className="flex items-center justify-center text-justify flex-col">
             <img src={banner} alt="" className="w-full h-auto" />
-            <h1 className="text-4xl my-5">{data.name}</h1>
           </div>
-          {/* paragraph div */}
-          <div className="px-4 py-5 mt-auto flex items-end justify-center text-white">
-            <p className="text-lg">{data.desc}</p>
+          <div>
+            <h1 className="text-4xl font-bold flex justify-center  mt-5">{data.name}</h1>
           </div>
         </div>
-        {/* <div className=" bg-gray-800 text-white text-center py-40 "> */}
-
-        {/* </div> */}
+        <div className=" lg:px-40 px-10 py-5 mt-auto flex justify-center text-justify">
+            <p className="text-lg flex items-center justify-center">{data.desc}</p>
+          </div>
       </div>
-      <footer className="site-footer">
-        <p>SMET © 2024 All Rights Reserved</p>
-      </footer>
+
     </>
   );
 };

@@ -14,7 +14,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', backgroundColor: '#f8f8f8', padding: '20px', color: '#333' }}>
+    <div style={{ textAlign: 'center', backgroundColor: '#f8f8f8', color: '#333' }}>
       {/* {contactus} */}
       <img
         src={contact}
@@ -27,7 +27,7 @@ const ContactUs = () => {
         <div style={{ flex: 1 }}>
           <div style={{ height: '60vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key: "" }}
+              bootstrapURLKeys={{ key: "hAXKtKdDz6uWAe43LeyTxw" }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
             >
@@ -40,23 +40,19 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Contact details on the right */}
         <div style={{ flex: 1, marginLeft: '20px', textAlign: 'left' }}>
-          <h2>Contact Us</h2>
+          <h2 className=' font-bold'>Contact Us</h2>
+          <br></br>
           <p>
-            <strong>Address:</strong> Your Company Address <br />
-            <strong>Email:</strong> your.email@example.com <br />
-            <strong>Phone:</strong> +91 123 456 7890 <br />
-            <strong>Mobile:</strong> +91 987 654 3210
+            <span className=' font-semibold'>Address:</span> National Institute of Technology, Kurukshetra-136119<br />
+            <span className=' font-semibold'>Email:</span> smet2024@nitkkr.ac.in<br />
+            <span className=' font-semibold'>Phone:</span> +91-7206514129<br />
           </p>
         </div>
       </div>
 
-      {/* Footer */}
       <div style={{ marginTop: '20px', borderTop: '1px solid #ccc', paddingTop: '10px', textAlign: 'center', color: '#666' }}>
-        <p>
-          Your Company © 2024 All Rights Reserved
-          <br />
+        <p className=' m-5'>
           Site Developed and Maintained by Tech Teams @ Infrastructure Society
         </p>
       </div>
