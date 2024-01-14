@@ -10,7 +10,7 @@ import AboutNITKurukshetra from "./component/about/about_NIT_Kurukshetra";
 import About_SMET_2024 from "./component/about/About_SMET_2024";
 import Home from "./component/Home";
 import ContactUs from "./component/contact/ContactUs";
-import Sponsorships from "./component/sponsers/Sponsorships";
+import Sponsorship from "./component/sponsers/Sponsorship";
 import ConferenceTrack from "./component/ConferenceTrack";
 import Footer from "./component/Footer";
 import RegistrationInformation from "./component/RegistrationInformation";
@@ -41,7 +41,7 @@ function App() {
         />
         <Route path="/about/sdcee-23" element={<About_SMET_2024 />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/sponsorships" element={<Sponsorships />} />
+        <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/conference-track" element={<ConferenceTrack />} />
         <Route path="/registration-information" element={<RegistrationInformation />} />
         <Route path="/submissions" element={<Submission />} />

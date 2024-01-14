@@ -182,9 +182,9 @@ function ConferenceTrack() {
                         <h1 className="text-4xl font-bold flex justify-center mt-5">Conference Track</h1>
                     </div>
                 </div>
-                <div className=" px-auto py-8 mx-auto grid items-start justify-start grid-flow-row grid-cols-1 lg:grid-cols-2 ">
+                <div className=" px-auto py-8 mx-auto max-sm:mx-0 max-sm:px-0 grid items-start justify-start grid-flow-row grid-cols-1 lg:grid-cols-2 ">
                     {data.map((items) => (
-                        <ul key={items.id} className="text-lg list-disc list_style py-5 mx-auto w-3/5">
+                        <ul key={items.id} className="text-lg list-disc list_style py-5 mx-auto w-3/5 max-sm:w-4/5">
                             <h1><span className=' font-bold ' >{items.id}</span>  : {items.name}</h1>
                             {items.values.map((listItem, index) => ( <li key={index} className='mx-10'>{listItem.id_value}</li> ))}
                         </ul>

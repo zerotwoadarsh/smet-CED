@@ -10,7 +10,7 @@ import homeBanner from "../assets/images/homeBanner.jpg"
 
 const Home = () => {
   const styles = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${homeBanner})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${homeBanner})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -63,9 +63,9 @@ const Home = () => {
       >
           <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
             <header>
-              <p className=" text-6xl font-extrabold">SMET-2024</p>
+              <p className=" sm:text-6xl font-extrabold text-5xl mb-10 max-sm:mt-20 ">SMET-2024</p>
             </header>
-            <p className="font-bold text-3xl flex flex-col text-center text-white opacity-100 z-2">
+            <p className="font-bold sm:text-3xl text-2xl flex flex-col text-center text-white opacity-100 z-2 mb-3 sm:mb-0">
               Sustainable Materials, Environment and Technologies under climate
               change scenario
             </p>
@@ -82,12 +82,9 @@ const Home = () => {
                 current research, development and sharing of relevant experience
                 in the specific areas of Civil Engineering. The conference shall
                 provide a useful forum to academicians, technologists,
-                entrepreneurs and the research scholars in respective domain to s{" "}
+                entrepreneurs and the research scholars in respective domain to s
               </p>
             </main>
-            <footer>
-              <p>&copy; 2024 Your Name</p>
-            </footer>
         </div>
       </div>
 
@@ -103,7 +100,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col md:flex-row m-20 justify-evenly items-start">
+        <div className=" flex flex-col md:flex-row m-10 justify-evenly items-start">
           <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
             <p className=" text-4xl m-5 font-bold">Scope</p>
             <p className=" text-blue-800 font-medium text-justify">
@@ -120,7 +117,7 @@ const Home = () => {
               publication.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 max-sm:mt-10 h-auto">
             <p className="text-4xl m-5 font-bold">Theme</p>
             <p className=" font-medium">
               The themes for SMET-2024 include but not limited to the following

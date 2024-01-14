@@ -14,16 +14,14 @@ const ContactUs = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', backgroundColor: '#f8f8f8', color: '#333' }}>
-      {/* {contactus} */}
+    <div  className='pb-5 text-justify bg-white text-black'>
       <img
         src={contact}
         alt="Contact Us Banner"
         style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }}
       />
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
-        {/* Map on the left */}
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px' }} className=' sm:flex sm:flex-row flex-col'>
         <div style={{ flex: 1 }}>
           <div style={{ height: '60vh', width: '100%' }}>
             <GoogleMapReact
@@ -49,12 +47,6 @@ const ContactUs = () => {
             <span className=' font-semibold'>Phone:</span> +91-7206514129<br />
           </p>
         </div>
-      </div>
-
-      <div style={{ marginTop: '20px', borderTop: '1px solid #ccc', paddingTop: '10px', textAlign: 'center', color: '#666' }}>
-        <p className=' m-5'>
-          Site Developed and Maintained by Tech Teams @ Infrastructure Society
-        </p>
       </div>
     </div>
   );

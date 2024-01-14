@@ -1,29 +1,25 @@
 import React from "react";
-import banner from "../../assets/images/banner.jpg";
+import committeeBanner from "../../assets/images/committeeBanner.jpg"
 
-const Committe = ({ styles, data }) => {
+const Committe = ({ data }) => {
   return (
-    <>
-      <div className="min-h-screenl bg-slate-50 text-black">
-        <div>
-          {/* Image Div */}
-          <div className="flex items-center justify-center ">
-            <img src={banner} alt="" className="w-full h-auto" />
-          </div>
-          <div>
-            <h1 className="text-4xl font-bold flex justify-center mt-5">{data.name}</h1>
-          </div>
+    <div className=" h-screen bg-slate-50 text-black">
+      <div>
+        <div className="flex items-center justify-center ">
+          <img src={committeeBanner} alt="" className="w-full h-auto" />
         </div>
-        <div style={styles} className=" px-4 py-8 mt-auto flex flex-shrink items-end justify-center">
-          <ul className="text-lg list-disc list_style">
-            {data.listItems.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+        <div>
+          <h1 className="text-4xl font-bold flex justify-center text-center max-sm:px-4 mt-5">{data.name}</h1>
         </div>
       </div>
-
-    </>
+      <div  className=" px-12 py-8 mt-auto flex flex-shrink items-end justify-center">
+        <ul className="text-lg list-disc list_style">
+          {data.listItems.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 };
 
