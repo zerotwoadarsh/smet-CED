@@ -3,7 +3,7 @@ import committeeBanner from "../../assets/images/committeeBanner.jpg"
 
 const Committe = ({ data }) => {
   return (
-    <div className=" h-screen bg-slate-50 text-black">
+    <div className=" h-full bg-slate-50 text-black">
       <div>
         <div className="flex items-center justify-center ">
           <img src={committeeBanner} alt="" className="w-full h-auto" />

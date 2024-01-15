@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import logo from '../assets/images/icon.jpg'
+
 const navLinkStyles = ({ isActive }) => {
   return {
     textDecoration: isActive ? 'underline' : 'none'
@@ -153,10 +155,16 @@ export const Navbar = () => {
         </div>
 
         <div
-          className="cursor-pointer  text-white pr-8 hamburger md:hidden"
+          className="cursor-pointer  text-white pr-8 hamburger md:hidden justify-between flex"
           onClick={handleMobileMenuToggle}
         >
-          &#9776;
+          <div className="flex flex-row justify-between w-[90vw] items-center">
+            <div className="">
+              <img src={logo} width={120} height={120} className="mix-blend-color-burn"/>
+            </div>
+            <div className="">&#9776;</div>
+          </div>
+
         </div>
 
         <div

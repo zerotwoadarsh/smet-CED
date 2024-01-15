@@ -1,6 +1,6 @@
 import React from 'react'
-import Committe from "./Committee/Committee";
-import banner from "../assets/images/banner.jpg";
+import conferenceTrackBanner from '../assets/images/conferenceTrackBanner.jpg'
+
 function ConferenceTrack() {
 
     const data = [
@@ -176,7 +176,7 @@ function ConferenceTrack() {
             <div className="min-h-screenl bg-white text-black">
                 <div>
                     <div className="flex items-center justify-center ">
-                        <img src={banner} alt="" className="w-full h-auto" />
+                        <img src={conferenceTrackBanner} alt="" className="w-full h-auto" />
                     </div>
                     <div>
                         <h1 className="text-4xl font-bold flex justify-center mt-5">Conference Track</h1>
