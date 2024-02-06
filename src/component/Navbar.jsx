@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-
 import logo from '../assets/images/icon.jpg'
 
 const navLinkStyles = ({ isActive }) => {
@@ -113,7 +112,7 @@ export const Navbar = () => {
               </div>
             </li>
           </NavLink>
-          <li className="mr-6 relative">
+          {/* <li className="mr-6 relative">
             <NavLink style={navLinkStyles} to="/registration-information" className="text-white hover:text-blue-900">
               Registration Information
             </NavLink>
@@ -122,6 +121,11 @@ export const Navbar = () => {
           <li className="mr-6 relative">
             <NavLink style={navLinkStyles} to="/submissions" className="text-white hover:text-blue-900">
               Submissions
+            </NavLink>
+          </li> */}
+          <li className="mr-6 relative">
+            <NavLink style={navLinkStyles} to="/" className="text-white hover:text-blue-900">
+              Author Section
             </NavLink>
           </li>
           <NavLink className="text-white hover:text-blue-900" onClick={handleMouseOverCommety}>
@@ -189,12 +193,13 @@ export const Navbar = () => {
               )}
             </div>
           </NavLink>
-          <NavLink to="/registration-information" className="text-white mb-2">
+          {/* <NavLink to="/registration-information" className="text-white mb-2">
             Registration Information
           </NavLink>
           <NavLink to="/submissions" className="text-white mb-2">
             Submissions
-          </NavLink>
+          </NavLink> */}
+          <NavLink className="text-white mb-2">Author Section</NavLink>
           <NavLink className="text-white mb-2">
             <div
               className="relative"

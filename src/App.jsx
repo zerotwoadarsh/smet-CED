@@ -43,8 +43,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/conference-track" element={<ConferenceTrack />} />
-        <Route path="/registration-information" element={<RegistrationInformation />} />
-        <Route path="/submissions" element={<Submission />} />
+        {/* <Route path="/registration-information" element={<RegistrationInformation />} /> */}
+        {/* <Route path="/submissions" element={<Submission />} /> */}
 
       </Routes>
       <Footer />

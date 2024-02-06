@@ -7,10 +7,11 @@ import mahesh from "../assets/images/mahesh.jpg";
 import praveen from "../assets/images/praveen.jpg";
 import ramana from "../assets/images/ramana.jpg";
 import homeBanner from "../assets/images/homeBanner.jpg"
+import nitGate from "../assets/images/nitGate.jpg"
 
 const Home = () => {
   const styles = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${homeBanner})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${nitGate})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -116,22 +117,6 @@ const Home = () => {
               conference theme and are expected to be communicated for possible
               publication.
             </p>
-          </div>
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 max-sm:mt-10 h-auto">
-            <p className="text-4xl m-5 font-bold">Theme</p>
-            <p className=" font-medium">
-              The themes for SMET-2024 include but not limited to the following
-              tracks in Civil Engineering.
-            </p>
-            <ul className=" font-medium">
-              <li>Structural Engineering</li>
-              <li>Geotechnical Engineering</li>
-              <li>Environmental Engineering</li>
-              <li>Transportation Engineering</li>
-              <li>Remote sensing and GIS Applications</li>
-              <li>Water Resource Engineering</li>
-              <li>AI and ML Applications in Civil Engineering</li>
-            </ul>
           </div>
         </div>
       </div>
