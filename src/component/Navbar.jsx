@@ -124,7 +124,7 @@ export const Navbar = () => {
             </NavLink>
           </li> */}
           <li className="mr-6 relative">
-            <NavLink style={navLinkStyles} to="/" className="text-white hover:text-blue-900">
+            <NavLink style={navLinkStyles} to="/author" className="text-white hover:text-blue-900">
               Author Section
             </NavLink>
           </li>
@@ -199,7 +199,7 @@ export const Navbar = () => {
           <NavLink to="/submissions" className="text-white mb-2">
             Submissions
           </NavLink> */}
-          <NavLink className="text-white mb-2">Author Section</NavLink>
+          <NavLink to="/author" className="text-white mb-2">Author</NavLink>
           <NavLink className="text-white mb-2">
             <div
               className="relative"

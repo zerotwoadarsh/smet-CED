@@ -1,5 +1,5 @@
 import React from 'react'
-import conferenceTrackBanner from '../assets/images/conferenceTrackBanner.jpg'
+import conferenceTrackBanner from '../../assets/images/conferenceTrackBanner.jpg'
 
 function ConferenceTrack() {
 

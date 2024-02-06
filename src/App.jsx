@@ -11,10 +11,12 @@ import About_SMET_2024 from "./component/about/About_SMET_2024";
 import Home from "./component/Home";
 import ContactUs from "./component/contact/ContactUs";
 import Sponsorship from "./component/sponsers/Sponsorship";
-import ConferenceTrack from "./component/ConferenceTrack";
+import ConferenceTrack from "./component/conferenceTrack/ConferenceTrack";
 import Footer from "./component/Footer";
 import RegistrationInformation from "./component/RegistrationInformation";
 import Submission from "./component/Submission";
+import Author from "./component/authorSection/Author";
+
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
         <Route path="/conference-track" element={<ConferenceTrack />} />
         {/* <Route path="/registration-information" element={<RegistrationInformation />} /> */}
         {/* <Route path="/submissions" element={<Submission />} /> */}
+        <Route path="/author" element={<Author />} />
 
       </Routes>
       <Footer />
