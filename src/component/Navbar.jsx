@@ -125,7 +125,7 @@ export const Navbar = () => {
           </li> */}
           <li className="mr-6 relative">
             <NavLink style={navLinkStyles} to="/author" className="text-white hover:text-blue-900">
-              Author Section
+              Author
             </NavLink>
           </li>
           <NavLink className="text-white hover:text-blue-900" onClick={handleMouseOverCommety}>
