@@ -25,7 +25,7 @@ const ContactUs = () => {
         <div style={{ flex: 1 }}>
           <div style={{ height: '60vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key: "hAXKtKdDz6uWAe43LeyTxw" }}
+              bootstrapURLKeys={{ key: "AIzaSyADPMQI0jWhUgSE5ugm9QhJpl8w5uQMpbo" }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
             >
