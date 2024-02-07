@@ -14,7 +14,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div  className='pb-5 text-justify bg-white text-black'>
+    <div className='pb-5 text-justify bg-white text-black'>
       <img
         src={contact}
         alt="Contact Us Banner"
