@@ -26,6 +26,7 @@ const DropdownMenu = ({ items }) => {
 export const Navbar = () => {
   const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
   const [isCommetyDropdownOpen, setCommetyDropdownOpen] = useState(false);
+  const [isAuthorDropdownOpen, setAuthorDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -58,6 +59,13 @@ export const Navbar = () => {
   const handleMouseLeaveCommety = () => {
     setCommetyDropdownOpen(false);
   };
+  const handleMouseOverAuthor = () => {
+    setAuthorDropdownOpen(true);
+  };
+
+  const handleMouseLeaveAuthor = () => {
+    setAuthorDropdownOpen(false);
+  };
 
   const handleMobileMenuToggle = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -66,20 +74,18 @@ export const Navbar = () => {
   const aboutDropdownItems = [
     { to: "/about/nit-kurukshetra", label: "About NIT Kurukshetra" },
     { to: "/about/kurukshetra", label: "About Kurukshetra" },
-    { to: "/about/sdcee-23", label: "About SMET-24" },
+    { to: "/about/sdcee-23", label: "About SMET-24" }
   ];
 
   const commietyDropdownItems = [
     { to: "/committee/organizing", label: "Organizing Committee" },
-    {
-      to: "/committee/internal-advisory",
-      label: "Internal Advisory Committee",
-    },
-    {
-      to: "/committee/external-advisory",
-      label: "External Advisory Committee",
-    },
-    { to: "/committee/technical", label: "Technical Committee" },
+    { to: "/committee/internal-advisory", label: "Internal Advisory Committee" },
+    { to: "/committee/external-advisory", label: "External Advisory Committee" },
+    { to: "/committee/technical", label: "Technical Committee" }
+  ];
+  const authorDropdownItems = [
+    { to: "/author/submissions", label: "Submissions" },
+    { to: "/author/registration", label: "Registration Information" },
   ];
 
   return (
@@ -112,6 +118,20 @@ export const Navbar = () => {
               </div>
             </li>
           </NavLink>
+          <NavLink className="text-white hover:text-blue-900" onClick={handleMouseOverAuthor}>
+            <li className="mr-6 relative">
+              <div
+                className="relative"
+                onMouseOver={handleMouseOverAuthor}
+                onMouseLeave={handleMouseLeaveAuthor}
+              >
+                Author
+                {isAuthorDropdownOpen && (
+                  <DropdownMenu items={authorDropdownItems} />
+                )}
+              </div>
+            </li>
+          </NavLink>
           {/* <li className="mr-6 relative">
             <NavLink style={navLinkStyles} to="/registration-information" className="text-white hover:text-blue-900">
               Registration Information
@@ -123,11 +143,11 @@ export const Navbar = () => {
               Submissions
             </NavLink>
           </li> */}
-          <li className="mr-6 relative">
+          {/* <li className="mr-6 relative">
             <NavLink style={navLinkStyles} to="/author" className="text-white hover:text-blue-900">
               Author
             </NavLink>
-          </li>
+          </li> */}
           <NavLink className="text-white hover:text-blue-900" onClick={handleMouseOverCommety}>
             <li
               className="mr-6 relative"

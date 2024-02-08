@@ -7,10 +7,10 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const ContactUs = () => {
   const defaultProps = {
     center: {
-      lat: 59.955413,
-      lng: 30.337844,
+      lat: 29.947668,
+      lng: 76.822359,
     },
-    zoom: 11,
+    zoom: 15,
   };
 
   return (
@@ -25,7 +25,7 @@ const ContactUs = () => {
         <div style={{ flex: 1 }}>
           <div style={{ height: '60vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key: "AIzaSyADPMQI0jWhUgSE5ugm9QhJpl8w5uQMpbo" }}
+              bootstrapURLKeys={{ key:"AIzaSyADPMQI0jWhUgSE5ugm9QhJpl8w5uQMpbo" }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
             >

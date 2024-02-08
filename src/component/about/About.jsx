@@ -7,7 +7,6 @@ const About = ({ data }) => {
     <>
       <div className=" h-full bg-white text-black">
         <div>
-          {/* Image Div */}
           <div className="flex items-center justify-center text-justify flex-col">
             <img src={data.img} alt="" className="w-full h-1/3x" />
           </div>
