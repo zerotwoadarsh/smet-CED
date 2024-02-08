@@ -1,10 +1,9 @@
 import React from 'react';
-import registrationBanner from '../assets/images/registrsationBanner.jpg'
+import registrationBanner from '../../assets/images/registrsationBanner.jpg'
 
 const RegistrationInformation = () => {
     return (
         <div className='bg-white text-black pb-10'>
-
             <div style={{ textAlign: 'center', backgroundColor: 'white', color: '#333' }}>
                 <img
                     src={registrationBanner}
@@ -14,7 +13,6 @@ const RegistrationInformation = () => {
                 />
                 <div style={{  padding: '0 10%', textAlign: 'left' }} >
                     <div>
-
                     <p className=' font-bold text-4xl text-center my-10 '>Registration Information</p>
                     <p className='text-justify'>
                         It is mandatory for at least one author of an accepted paper to register for the paper to appear in the conference proceeding. The author presenting the second and subsequent papers will get discount, if he/she registers with the same author’s name and e-mail ID. Co-authors must register by paying full registration fee, in case they want to attend and get presentation certificate as conference delegate.
@@ -77,11 +75,9 @@ const RegistrationInformation = () => {
                         <li className='mt-2'><span className=' font-semibold '>Bank Correspondent Bank Name:</span> SBI SUGAR MILL AREAR BRANCH (50088) YAMUNANAGAR Beneficiary Bank</li>
                         <li className='mt-2'><span className=' font-semibold '>Correspondent Bank SWIFT code:</span> SBININBBP10</li>
                     </ul>
-
                 </div>
             </div>
         </div>
     );
 };
-
 export default RegistrationInformation;

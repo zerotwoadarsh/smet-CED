@@ -14,7 +14,6 @@ const RegistrationInformation = () => {
                 />
                 <div style={{  padding: '0 10%', textAlign: 'left' }} >
                     <div>
-
                     <p className=' font-bold text-4xl text-center my-10 '>Registration Information</p>
                     <p className='text-justify'>
                         It is mandatory for at least one author of an accepted paper to register for the paper to appear in the conference proceeding. The author presenting the second and subsequent papers will get discount, if he/she registers with the same author’s name and e-mail ID. Co-authors must register by paying full registration fee, in case they want to attend and get presentation certificate as conference delegate.

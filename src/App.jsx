@@ -13,9 +13,9 @@ import ContactUs from "./component/contact/ContactUs";
 import Sponsorship from "./component/sponsers/Sponsorship";
 import ConferenceTrack from "./component/conferenceTrack/ConferenceTrack";
 import Footer from "./component/Footer";
-import RegistrationInformation from "./component/RegistrationInformation";
-import Submission from "./component/Submission";
-import Author from "./component/authorSection/Author";
+import RegistrationInformation from "./component/authorSection/Author_Registration";
+import Submission from "./component/authorSection/Author_Submission";
+
 
 
 function App() {
@@ -45,9 +45,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/conference-track" element={<ConferenceTrack />} />
-        {/* <Route path="/registration-information" element={<RegistrationInformation />} /> */}
-        {/* <Route path="/submissions" element={<Submission />} /> */}
-        <Route path="/author" element={<Author />} />
+        <Route path="/author/registration-information" element={<RegistrationInformation />} />
+        <Route path="/author/submissions" element={<Submission />} />
 
       </Routes>
       <Footer />

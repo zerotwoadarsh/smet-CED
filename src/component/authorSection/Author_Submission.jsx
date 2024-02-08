@@ -1,5 +1,5 @@
 import React from 'react';
-import submissionBanner from "../assets/images/submissionBanner.png"
+import submissionBanner from "../../assets/images/submissionBanner.png"
 
 const Submission = () => {
     return (

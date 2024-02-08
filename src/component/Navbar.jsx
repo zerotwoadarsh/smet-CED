@@ -85,7 +85,7 @@ export const Navbar = () => {
   ];
   const authorDropdownItems = [
     { to: "/author/submissions", label: "Submissions" },
-    { to: "/author/registration", label: "Registration Information" },
+    { to: "/author/registration-information", label: "Registration Information" },
   ];
 
   return (
@@ -219,7 +219,6 @@ export const Navbar = () => {
           <NavLink to="/submissions" className="text-white mb-2">
             Submissions
           </NavLink> */}
-          <NavLink to="/author" className="text-white mb-2">Author</NavLink>
           <NavLink className="text-white mb-2">
             <div
               className="relative"
@@ -228,6 +227,17 @@ export const Navbar = () => {
               Committee
               {isCommetyDropdownOpen && (
                 <DropdownMenu items={commietyDropdownItems} />
+              )}
+            </div>
+          </NavLink>
+          <NavLink className="text-white mb-2">
+            <div
+              className="relative"
+              onMouseOver={handleMouseOverAuthor}
+              onMouseLeave={handleMouseLeaveAuthor}>
+              Author
+              {isAuthorDropdownOpen && (
+                <DropdownMenu items={authorDropdownItems} />
               )}
             </div>
           </NavLink>

@@ -1,7 +1,7 @@
 import { React, useRef, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import contact from "../../assets/images/contact.png";
-import { LoadScript, GoogleMap, Marker } from "@react-google-maps/api";
+// import { LoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -45,7 +45,7 @@ const ContactUs = () => {
               />
               29.94906 76.817254
             
-            </GoogleMapReact> */}
+            </GoogleMapReact> 
             <Map latitude={29.94906} longitude={76.817254} />
           </div>
         </div>
