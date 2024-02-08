@@ -7,10 +7,6 @@ const ListItem = (props) => {
     return (
       <Card
         key={user.name}
-        // designation={user.designation}
-        // img={user.img}
-        // name={user.name}
-        // post={user.post}
         props={user}
       />
     );

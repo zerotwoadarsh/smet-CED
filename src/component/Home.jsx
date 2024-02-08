@@ -6,11 +6,12 @@ import hd_chalak from "../assets/images/hd_chalak.jpg";
 import mahesh from "../assets/images/mahesh.jpg";
 import praveen from "../assets/images/praveen.jpg";
 import ramana from "../assets/images/ramana.jpg";
-import homeBanner from "../assets/images/homeBanner.jpg"
+import homeBanner from "../assets/images/homeBanner.jpg";
+import nitGate from "../assets/images/nitGate.jpg";
 
 const Home = () => {
   const styles = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${homeBanner})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${nitGate})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -61,33 +62,36 @@ const Home = () => {
         style={styles}
         className="flex flex-col min-h-screen justify-center items-center"
       >
-          <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
-            <header>
-              <p className=" text-6xl font-extrabold">SMET-2024</p>
-            </header>
-            <p className="font-bold text-3xl flex flex-col text-center text-white opacity-100 z-2">
-              Sustainable Materials, Environment and Technologies under climate
-              change scenario
+        <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
+          <header className="flex flex-col text-center">
+            <p className=" sm:text-6xl font-extrabold text-5xl mb-10 max-sm:mt-20 ">
+              SMET-2024
             </p>
-            <main className=" flex justify-center items-center">
-              <p className="flex justify-center items-center text-justify">
-                An International Conference on Sustainable Materials, Environment
-                and Technologies under climate change scenario is being organized
-                by the Department of Civil Engineering, National Institute of
-                Technology, Kurukshetra. The need of the era is to use sustainable
-                technologies. Sustainable development is the idea that human
-                societies must live, and meet their needs, without compromising
-                the ability of future generations to achieve their requirements.
-                The conference aims to stimulate the exchange of information on
-                current research, development and sharing of relevant experience
-                in the specific areas of Civil Engineering. The conference shall
-                provide a useful forum to academicians, technologists,
-                entrepreneurs and the research scholars in respective domain to s{" "}
-              </p>
-            </main>
-            <footer>
-              <p>&copy; 2024 Your Name</p>
-            </footer>
+            <p className=" sm:text-4xl font-extrabold text-5xl mb-10 max-sm:mt-20 ">
+              (July 25-27, 2024) (Hybrid Mode)
+            </p>
+          </header>
+          <p className="font-bold sm:text-3xl text-2xl flex flex-col text-center text-white opacity-100 z-2 mb-3 sm:mb-0">
+            Sustainable Materials, Environment and Technologies under climate
+            change scenario
+          </p>
+          <main className=" flex justify-center items-center">
+            <p className="flex justify-center items-center text-justify">
+              An International Conference on Sustainable Materials, Environment
+              and Technologies under climate change scenario is being organized
+              by the Department of Civil Engineering, National Institute of
+              Technology, Kurukshetra. The need of the era is to use sustainable
+              technologies. Sustainable development is the idea that human
+              societies must live, and meet their needs, without compromising
+              the ability of future generations to achieve their requirements.
+              The conference aims to stimulate the exchange of information on
+              current research, development and sharing of relevant experience
+              in the specific areas of Civil Engineering. The conference shall
+              provide a useful forum to academicians, technologists,
+              entrepreneurs and the research scholars in respective domain to
+              share ideas, for further benefit of the mankind at large.
+            </p>
+          </main>
         </div>
       </div>
 
@@ -103,7 +107,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col md:flex-row m-20 justify-evenly items-start">
+        <div className=" flex flex-col md:flex-row m-10 justify-evenly items-start">
           <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
             <p className=" text-4xl m-5 font-bold">Scope</p>
             <p className=" text-blue-800 font-medium text-justify">
@@ -119,22 +123,6 @@ const Home = () => {
               conference theme and are expected to be communicated for possible
               publication.
             </p>
-          </div>
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/3 h-auto">
-            <p className="text-4xl m-5 font-bold">Theme</p>
-            <p className=" font-medium">
-              The themes for SMET-2024 include but not limited to the following
-              tracks in Civil Engineering.
-            </p>
-            <ul className=" font-medium">
-              <li>Structural Engineering</li>
-              <li>Geotechnical Engineering</li>
-              <li>Environmental Engineering</li>
-              <li>Transportation Engineering</li>
-              <li>Remote sensing and GIS Applications</li>
-              <li>Water Resource Engineering</li>
-              <li>AI and ML Applications in Civil Engineering</li>
-            </ul>
           </div>
         </div>
       </div>
