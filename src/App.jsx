@@ -15,6 +15,7 @@ import ConferenceTrack from "./component/conferenceTrack/ConferenceTrack";
 import Footer from "./component/Footer";
 import RegistrationInformation from "./component/authorSection/Author_Registration";
 import Submission from "./component/authorSection/Author_Submission";
+import Presentation from "./component/authorSection/Author_Presentation";
 
 
 
@@ -47,7 +48,7 @@ function App() {
         <Route path="/conference-track" element={<ConferenceTrack />} />
         <Route path="/author/registration-information" element={<RegistrationInformation />} />
         <Route path="/author/submissions" element={<Submission />} />
-
+        <Route path="/author/presentation" element={<Presentation />} />
       </Routes>
       <Footer />
     </Router>

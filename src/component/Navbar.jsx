@@ -86,6 +86,7 @@ export const Navbar = () => {
   const authorDropdownItems = [
     { to: "/author/submissions", label: "Submissions" },
     { to: "/author/registration-information", label: "Registration Information" },
+    { to: "/author/presentation", label: "Presentation Guide" },
   ];
 
   return (
