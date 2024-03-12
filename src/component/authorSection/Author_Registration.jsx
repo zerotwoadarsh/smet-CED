@@ -61,7 +61,7 @@ const RegistrationInformation = () => {
             <div className='flex items-center justify-center mt-10 '>
                 <div className='w-4/5 bg-slate-100 p-5' >
                     <p className=' text-red-700 font-bold'>* Registration fee is non-refundable</p>
-                    <p className=' text-red-700 font-bold'>Late Fee: Rs. 500/- or $10 after 5th Feb. 2024</p>
+                    <p className=' text-red-700 font-bold'>Late Fee: Rs. 500/- or $10 after 5th July. 2024</p>
                     <ul><span className=' font-semibold'>For Indian Authors Payment will be made through <span className=' font-bold'>SBI iCollect</span> (Payment link will be displayed soon) or NEFT in the following account:</span>
                         <li className='mt-2'>A/c Name: Director, NIT Kurukshetra</li>
                         <li className='mt-2'>A/c No. 10116885013; IFSC: SBIN0006260.</li>

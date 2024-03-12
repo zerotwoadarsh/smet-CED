@@ -64,10 +64,10 @@ const Home = () => {
       >
         <div className=" w-4/5 flex flex-col justify-center items-center text-justify">
           <header className="flex flex-col text-center">
-            <p className=" sm:text-6xl font-extrabold text-5xl mb-10 max-sm:mt-20 ">
+            <p className=" sm:text-6xl font-extrabold text-white text-5xl mb-10 max-sm:mt-20 ">
               SMET-2024
             </p>
-            <p className=" sm:text-4xl font-extrabold text-5xl mb-10 max-sm:mt-20 ">
+            <p className=" sm:text-4xl font-extrabold text-white text-5xl mb-10 max-sm:mt-20 ">
               (July 25-27, 2024) (Hybrid Mode)
             </p>
           </header>
@@ -76,7 +76,7 @@ const Home = () => {
             change scenario
           </p>
           <main className=" flex justify-center items-center">
-            <p className="flex justify-center items-center text-justify">
+            <p className="flex justify-center text-white items-center text-justify">
               An International Conference on Sustainable Materials, Environment
               and Technologies under climate change scenario is being organized
               by the Department of Civil Engineering, National Institute of
