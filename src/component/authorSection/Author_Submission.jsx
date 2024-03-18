@@ -1,6 +1,11 @@
 import React from "react";
 import submissionBanner from "../../assets/images/submissionBanner.png";
+import { Link } from "react-router-dom";
+
+import file1 from "../../assets/files/wordFile.pdf"
+import file2 from "../../assets/files/macFile.pdf"
 const Submission = () => {
+
   return (
     <div
       style={{ textAlign: "center", backgroundColor: "white", color: "black" }}
@@ -24,22 +29,9 @@ const Submission = () => {
           </div>
           <div className=" mt-10 mb-5">
             <p className=" text-2xl pb-4 text-green-800 font-semibold">
-              Full Paper Submission <a href="">( LINK HERE )</a>
+              Full Paper Submission <a href="https://cmt3.research.microsoft.com/SMET2024" target="_blank">(Click Here)</a>
             </p>
-            <div className="mb-5">
-              <li>
-                Word File
-                <a href={"../../assets/files/splnproc1703.pdf"} download>
-                  (Link here)
-                </a>
-              </li>
-              <li>
-                Mac File
-                <a href={"../../assets/files/splnproc1703_mac.pdf"} download>
-                  (Link here)
-                </a>
-              </li>
-            </div>
+
             <div className="pb-2">
               <p className=" text-green-600 font-medium mb-2">Step 1:</p>
               <p>
@@ -48,14 +40,39 @@ const Submission = () => {
                 less than 6 pages.
               </p>
             </div>
+
             <div className="pb-2">
               <p className=" text-green-600 font-medium mb-2">Step 2:</p>
               <p>
                 To make sure that the page-size, margin and font-size
                 requirements are in required template, prospective authors are
-                strongly advised to download above the full paper template
+                strongly advised to download the full paper template
                 before submission.
               </p>
+            </div>
+            <div className="mb-5">
+              <li>
+                Word File
+                <span className="ml-1"><Link
+                  to={file1}
+                  download="word-file"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  (Download file)
+                </Link></span>
+              </li>
+              <li>
+                Mac File
+                <span className="ml-1"><Link
+                  to={file2}
+                  download="mac-file"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  (Download file)
+                </Link></span>
+              </li>
             </div>
           </div>
           <div className=" mt-10 mb-5">
@@ -87,10 +104,7 @@ const Submission = () => {
                   May 31, 2024
                 </td>
               </tr>
-              {/* <tr>
-                                <td style={{ border: '1px solid black', padding: '14px' }}  >Notification Deadline</td>
-                                <td style={{ border: '1px solid black', padding: '14px' }}  >January 26, 2024</td>
-                            </tr> */}
+
               <tr>
                 <td style={{ border: "1px solid black", padding: "14px" }}>
                   {" "}
